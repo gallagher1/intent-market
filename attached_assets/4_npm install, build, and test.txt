@@ -1,0 +1,43 @@
+﻿2025-05-26T20:33:20.8274092Z ##[group]Run npm install
+2025-05-26T20:33:20.8275213Z [36;1mnpm install[0m
+2025-05-26T20:33:20.8276233Z [36;1mnpm run build --if-present[0m
+2025-05-26T20:33:20.8277466Z [36;1mnpm run test --if-present[0m
+2025-05-26T20:33:20.8433099Z shell: /usr/bin/bash -e {0}
+2025-05-26T20:33:20.8434182Z ##[endgroup]
+2025-05-26T20:33:24.1077080Z npm warn deprecated @esbuild-kit/esm-loader@2.6.5: Merged into tsx: https://tsx.is
+2025-05-26T20:33:24.1472446Z npm warn deprecated @esbuild-kit/core-utils@3.3.2: Merged into tsx: https://tsx.is
+2025-05-26T20:33:28.6931036Z 
+2025-05-26T20:33:28.6932084Z added 482 packages, and audited 483 packages in 8s
+2025-05-26T20:33:28.6932823Z 
+2025-05-26T20:33:28.6933187Z 64 packages are looking for funding
+2025-05-26T20:33:28.6933857Z   run `npm fund` for details
+2025-05-26T20:33:28.7218563Z 
+2025-05-26T20:33:28.7219449Z 7 moderate severity vulnerabilities
+2025-05-26T20:33:28.7220217Z 
+2025-05-26T20:33:28.7220728Z To address issues that do not require attention, run:
+2025-05-26T20:33:28.7221565Z   npm audit fix
+2025-05-26T20:33:28.7221866Z 
+2025-05-26T20:33:28.7222422Z To address all issues (including breaking changes), run:
+2025-05-26T20:33:28.7223162Z   npm audit fix --force
+2025-05-26T20:33:28.7223817Z 
+2025-05-26T20:33:28.7226926Z Run `npm audit` for details.
+2025-05-26T20:33:28.8763415Z 
+2025-05-26T20:33:28.8764311Z > rest-express@1.0.0 build
+2025-05-26T20:33:28.8765943Z > vite build && esbuild server/index.ts --platform=node --packages=external --bundle --format=esm --outdir=dist
+2025-05-26T20:33:28.8766698Z 
+2025-05-26T20:33:29.0643647Z [36mvite v5.4.14 [32mbuilding for production...[36m[39m
+2025-05-26T20:33:29.1172447Z transforming...
+2025-05-26T20:33:29.4155565Z Browserslist: browsers data (caniuse-lite) is 7 months old. Please run:
+2025-05-26T20:33:29.4156445Z   npx update-browserslist-db@latest
+2025-05-26T20:33:29.4157252Z   Why you should do it regularly: https://github.com/browserslist/update-db#readme
+2025-05-26T20:33:31.9886275Z [32m✓[39m 1696 modules transformed.
+2025-05-26T20:33:32.1438268Z rendering chunks...
+2025-05-26T20:33:32.1505332Z computing gzip size...
+2025-05-26T20:33:32.1605445Z [2m../dist/public/[22m[32mindex.html                 [39m[1m[2m  0.63 kB[22m[1m[22m[2m │ gzip:  0.38 kB[22m
+2025-05-26T20:33:32.1607016Z [2m../dist/public/[22m[2massets/[22m[35mindex-BVuhc0Ym.css  [39m[1m[2m 69.63 kB[22m[1m[22m[2m │ gzip: 12.09 kB[22m
+2025-05-26T20:33:32.1608085Z [2m../dist/public/[22m[2massets/[22m[36mindex-D-x11t2n.js   [39m[1m[2m314.56 kB[22m[1m[22m[2m │ gzip: 95.44 kB[22m
+2025-05-26T20:33:32.1609963Z [32m✓ built in 3.07s[39m
+2025-05-26T20:33:32.2001896Z 
+2025-05-26T20:33:32.2002338Z   dist/index.js  28.8kb
+2025-05-26T20:33:32.2002659Z 
+2025-05-26T20:33:32.2003089Z ⚡ Done in 5ms

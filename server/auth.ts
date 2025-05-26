@@ -72,11 +72,6 @@ export function setupAuth(app: Express) {
 
   app.post("/api/register", async (req, res, next) => {
     try {
-      const existingUser = await storage.getUserByUsername(req.body.username);
-      if (existingUser) {
-        return res.status(400).json({ message: "Username already exists" });
-      }
-
       const user = await storage.createUser({
         ...req.body,
         password: await hashPassword(req.body.password),
@@ -88,11 +83,15 @@ export function setupAuth(app: Express) {
         const { password, ...userWithoutPassword } = user;
         res.status(201).json(userWithoutPassword);
       });
-  } catch (error) {
-      // Handle potential duplicate key errors from database
-      if (error.message && error.message.includes('duplicate') || error.message.includes('unique')) {
+    } catch (error: any) {
+      // Handle database constraint errors for duplicate usernames
+      if (error.code === '23505' || // PostgreSQL unique constraint violation
+          error.message?.toLowerCase().includes('duplicate') ||
+          error.message?.toLowerCase().includes('unique') ||
+          error.message?.toLowerCase().includes('already exists')) {
         return res.status(400).json({ message: "Username already exists" });
       }
+      console.error('Registration error:', error);
       next(error);
     }
   });

@@ -1,0 +1,22 @@
+﻿2025-05-26T20:34:16.0238607Z ##[group]Run azure/login@v2
+2025-05-26T20:34:16.0238869Z with:
+2025-05-26T20:34:16.0239296Z   client-id: ***
+2025-05-26T20:34:16.0239708Z   tenant-id: ***
+2025-05-26T20:34:16.0240002Z   subscription-id: ***
+2025-05-26T20:34:16.0240250Z   enable-AzPSSession: false
+2025-05-26T20:34:16.0240481Z   environment: azurecloud
+2025-05-26T20:34:16.0240714Z   allow-no-subscriptions: false
+2025-05-26T20:34:16.0240993Z   audience: api://AzureADTokenExchange
+2025-05-26T20:34:16.0241091Z   auth-type: SERVICE_PRINCIPAL
+2025-05-26T20:34:16.0241169Z ##[endgroup]
+2025-05-26T20:34:16.0607392Z Running Azure CLI Login.
+2025-05-26T20:34:26.0148567Z [command]/usr/bin/az cloud set -n azurecloud
+2025-05-26T20:34:26.2194453Z Done setting cloud: "azurecloud"
+2025-05-26T20:34:26.3036377Z Federated token details:
+2025-05-26T20:34:26.3036882Z  issuer - https://token.actions.githubusercontent.com
+2025-05-26T20:34:26.3037369Z  subject claim - repo:gallagher1/intent-market:environment:Production
+2025-05-26T20:34:26.3037777Z  audience - api://AzureADTokenExchange
+2025-05-26T20:34:26.3038532Z  job_workflow_ref - gallagher1/intent-market/.github/workflows/main_intent-market.yml@refs/heads/main
+2025-05-26T20:34:26.3039090Z Attempting Azure CLI login by using OIDC...
+2025-05-26T20:34:27.7424566Z Subscription is set successfully.
+2025-05-26T20:34:27.7425179Z Azure CLI login succeeds by using OIDC.

@@ -1,0 +1,4 @@
+﻿2025-05-26T20:56:24.4869127Z Evaluate and set environment url
+2025-05-26T20:56:24.4873513Z Evaluated environment url: https://intent-market-a0h7drbycjcre8f3.eastasia-01.azurewebsites.net
+2025-05-26T20:56:24.4874500Z Cleaning up orphan processes
+2025-05-26T20:56:24.5429286Z Terminate orphan process: pid (2500) (python3)

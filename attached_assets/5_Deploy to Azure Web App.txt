@@ -1,0 +1,32 @@
+﻿2025-05-26T20:34:27.7543581Z ##[group]Run azure/webapps-deploy@v3
+2025-05-26T20:34:27.7544077Z with:
+2025-05-26T20:34:27.7544406Z   app-name: intent-market
+2025-05-26T20:34:27.7544792Z   slot-name: Production
+2025-05-26T20:34:27.7545178Z   package: .
+2025-05-26T20:34:27.7545498Z ##[endgroup]
+2025-05-26T20:34:59.4258153Z Package deployment using OneDeploy initiated.
+2025-05-26T20:56:22.3697363Z {
+2025-05-26T20:56:22.3697925Z   id: 'c10a6c34-04bc-4cde-bf9b-684b4da43c65',
+2025-05-26T20:56:22.3698565Z   status: 4,
+2025-05-26T20:56:22.3698843Z   status_text: '',
+2025-05-26T20:56:22.3699129Z   author_email: 'N/A',
+2025-05-26T20:56:22.3699629Z   author: 'N/A',
+2025-05-26T20:56:22.3700009Z   deployer: 'OneDeploy',
+2025-05-26T20:56:22.3700532Z   message: 'OneDeploy',
+2025-05-26T20:56:22.3701021Z   progress: '',
+2025-05-26T20:56:22.3701410Z   received_time: '2025-05-26T20:35:52.8961907Z',
+2025-05-26T20:56:22.3701826Z   start_time: '2025-05-26T20:35:54.5154474Z',
+2025-05-26T20:56:22.3702205Z   end_time: '2025-05-26T20:56:16.9787323Z',
+2025-05-26T20:56:22.3704757Z   last_success_end_time: '2025-05-26T20:56:16.9787323Z',
+2025-05-26T20:56:22.3705272Z   complete: true,
+2025-05-26T20:56:22.3705647Z   active: true,
+2025-05-26T20:56:22.3706033Z   is_temp: false,
+2025-05-26T20:56:22.3706776Z   is_readonly: true,
+2025-05-26T20:56:22.3707953Z   url: 'https://intent-market-a0h7drbycjcre8f3.scm.eastasia-01.azurewebsites.net/api/deployments/c10a6c34-04bc-4cde-bf9b-684b4da43c65',
+2025-05-26T20:56:22.3710045Z   log_url: 'https://intent-market-a0h7drbycjcre8f3.scm.eastasia-01.azurewebsites.net/api/deployments/c10a6c34-04bc-4cde-bf9b-684b4da43c65/log',
+2025-05-26T20:56:22.3710977Z   site_name: 'intent-market',
+2025-05-26T20:56:22.3711348Z   build_summary: { errors: [], warnings: [] }
+2025-05-26T20:56:22.3711721Z }
+2025-05-26T20:56:22.6736785Z Deploy logs can be viewed at https://intent-market-a0h7drbycjcre8f3.scm.eastasia-01.azurewebsites.net/api/deployments/c10a6c34-04bc-4cde-bf9b-684b4da43c65/log
+2025-05-26T20:56:22.6737939Z Successfully deployed web package to App Service.
+2025-05-26T20:56:23.6777286Z App Service Application URL: https://intent-market-a0h7drbycjcre8f3.eastasia-01.azurewebsites.net

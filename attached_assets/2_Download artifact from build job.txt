@@ -1,0 +1,18 @@
+﻿2025-05-26T20:34:09.0750350Z ##[group]Run actions/download-artifact@v4
+2025-05-26T20:34:09.0751814Z with:
+2025-05-26T20:34:09.0752513Z   name: node-app
+2025-05-26T20:34:09.0753301Z   merge-multiple: false
+2025-05-26T20:34:09.0754208Z   repository: gallagher1/intent-market
+2025-05-26T20:34:09.0755207Z   run-id: 15261592434
+2025-05-26T20:34:09.0756156Z ##[endgroup]
+2025-05-26T20:34:09.2802324Z Downloading single artifact
+2025-05-26T20:34:09.3692888Z Preparing to download the following artifacts:
+2025-05-26T20:34:09.3695872Z - node-app (ID: 3199537572, Size: 134640256, Expected Digest: sha256:ebc3f7574c6cfc5480a0b4c98bafc051abba4fe3522ca6cda7b1c168c3d4fc79)
+2025-05-26T20:34:09.4134118Z Redirecting to blob download url: https://productionresultssa6.blob.core.windows.net/actions-results/6abd8ae8-f015-4be7-9b72-12b29476f2c8/workflow-job-run-5e68f73d-bcfe-52e8-8ee4-dd176e79e577/artifacts/236bf3d06418ac7275c91e12343cfbf289a60ef44239b89d4056c5a20b2ba55d.zip
+2025-05-26T20:34:09.4139533Z Starting download of artifact to: /home/runner/work/intent-market/intent-market
+2025-05-26T20:34:09.5173264Z (node:1983) [DEP0005] DeprecationWarning: Buffer() is deprecated due to security and usability issues. Please use the Buffer.alloc(), Buffer.allocUnsafe(), or Buffer.from() methods instead.
+2025-05-26T20:34:09.5177542Z (Use `node --trace-deprecation ...` to show where the warning was created)
+2025-05-26T20:34:11.0495839Z SHA256 digest of downloaded artifact is ebc3f7574c6cfc5480a0b4c98bafc051abba4fe3522ca6cda7b1c168c3d4fc79
+2025-05-26T20:34:11.0497466Z Artifact download completed successfully.
+2025-05-26T20:34:11.0498074Z Total of 1 artifact(s) downloaded
+2025-05-26T20:34:11.0503328Z Download artifact has finished successfully

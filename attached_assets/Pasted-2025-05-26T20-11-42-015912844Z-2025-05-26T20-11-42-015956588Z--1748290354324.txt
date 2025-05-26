@@ -1,0 +1,38 @@
+2025-05-26T20:11:42.015912844Z     _____
+2025-05-26T20:11:42.015956588Z    /  _  \ __________ _________   ____
+2025-05-26T20:11:42.015960287Z   /  /_\  \\___   /  |  \_  __ \_/ __ \
+2025-05-26T20:11:42.015963035Z  /    |    \/    /|  |  /|  | \/\  ___/
+2025-05-26T20:11:42.015965544Z  \____|__  /_____ \____/ |__|    \___  >
+2025-05-26T20:11:42.015968248Z          \/      \/                  \/
+2025-05-26T20:11:42.015970833Z  A P P   S E R V I C E   O N   L I N U X
+2025-05-26T20:11:42.015973190Z
+2025-05-26T20:11:42.015975481Z  Documentation: http://aka.ms/webapp-linux
+2025-05-26T20:11:42.015977944Z  NodeJS quickstart: https://aka.ms/node-qs
+2025-05-26T20:11:42.015980725Z  NodeJS Version : v22.15.0
+2025-05-26T20:11:42.015983085Z  Note: Any data outside '/home' is not persisted
+2025-05-26T20:11:42.015985574Z
+2025-05-26T20:11:47.048401638Z  Starting OpenBSD Secure Shell server: sshd.
+2025-05-26T20:11:47.069086289Z  WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-05-26T20:11:47.198857446Z  Updating certificates in /etc/ssl/certs...
+2025-05-26T20:12:07.582397215Z  rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-05-26T20:12:07.895236587Z  2 added, 0 removed; done.
+2025-05-26T20:12:07.903811287Z  Running hooks in /etc/ca-certificates/update.d...
+2025-05-26T20:12:07.934727784Z  done.
+2025-05-26T20:12:07.986133922Z  CA certificates copied and updated successfully.
+2025-05-26T20:12:08.530845814Z  Starting periodic command scheduler: cron.
+2025-05-26T20:12:08.999682129Z  Could not find build manifest file at '/home/site/wwwroot/oryx-manifest.toml'
+2025-05-26T20:12:09.027985741Z  Could not find operation ID in manifest. Generating an operation id...
+2025-05-26T20:12:09.028012910Z  Build Operation ID: eff1774a-7bad-468c-b468-ddd87dc9eaaa
+2025-05-26T20:12:10.033424575Z  Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-05-26T20:12:10.216363290Z  Writing output script to '/opt/startup/startup.sh'
+2025-05-26T20:12:10.447448922Z  Running #!/bin/sh
+2025-05-26T20:12:10.447473220Z
+2025-05-26T20:12:10.447476970Z  # Enter the source directory to make sure the script runs where the user expects
+2025-05-26T20:12:10.447480124Z  cd "/home/site/wwwroot"
+2025-05-26T20:12:10.447482703Z
+2025-05-26T20:12:10.447485139Z  export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-05-26T20:12:10.447493915Z  if [ -z "$PORT" ]; then
+2025-05-26T20:12:10.447496636Z  		export PORT=8080
+2025-05-26T20:12:10.447499572Z  fi
+2025-05-26T20:12:10.447501900Z
+2025-05-26T20:12:10.447504149Z  PATH="$PATH:/home/site/wwwroot" npm start
