@@ -88,7 +88,11 @@ export function setupAuth(app: Express) {
         const { password, ...userWithoutPassword } = user;
         res.status(201).json(userWithoutPassword);
       });
-    } catch (error) {
+  } catch (error) {
+      // Handle potential duplicate key errors from database
+      if (error.message && error.message.includes('duplicate') || error.message.includes('unique')) {
+        return res.status(400).json({ message: "Username already exists" });
+      }
       next(error);
     }
   });
