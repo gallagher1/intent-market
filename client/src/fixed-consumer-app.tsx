@@ -285,7 +285,26 @@ export default function FixedConsumerApp() {
 
   // Handler functions
   const handleLogin = (username: string, userType: 'consumer' | 'company') => {
-    loginMutation.mutate({ username, userType });
+    // Validate username
+    if (!username || username.trim().length === 0) {
+      toast({
+        title: "Username Required",
+        description: "Please enter a username to continue.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    if (username.trim().length < 3) {
+      toast({
+        title: "Username Too Short",
+        description: "Username must be at least 3 characters long.",
+        variant: "destructive"
+      });
+      return;
+    }
+    
+    loginMutation.mutate({ username: username.trim(), userType });
   };
 
   const handleLogout = () => {
