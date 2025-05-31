@@ -1044,14 +1044,14 @@ export default function FixedConsumerApp() {
             
             <div className="grid grid-cols-2 gap-4">
               <Button 
-                onClick={() => handleLogin(loginUsername || "Consumer User", "consumer")}
+                onClick={() => handleLogin(loginUsername, "consumer")}
                 className="w-full"
                 disabled={loginMutation.isPending || registerMutation.isPending}
               >
                 {loginMutation.isPending || registerMutation.isPending ? "Logging in..." : "Login as Consumer"}
               </Button>
               <Button 
-                onClick={() => handleLogin(loginUsername || "Company User", "company")}
+                onClick={() => handleLogin(loginUsername, "company")}
                 variant="outline"
                 className="w-full"
                 disabled={loginMutation.isPending || registerMutation.isPending}
