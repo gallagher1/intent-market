@@ -147,8 +147,8 @@ export async function registerRoutes(app: Express): Promise<Server> {
     try {
       const producerId = req.user!.id;
       
-      // Check if user is a company
-      if (req.user!.userType !== "company") {
+      // Check if user is a company or producer
+      if (req.user!.userType !== "company" && req.user!.userType !== "producer") {
         return res.status(403).json({ message: "Only companies can create offers" });
       }
       
