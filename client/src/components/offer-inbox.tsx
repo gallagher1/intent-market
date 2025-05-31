@@ -74,9 +74,14 @@ export function OfferInbox({ intents, offers, onAcceptOffer, onRejectOffer, onMe
     return offers.filter(offer => selectedOffers.includes(offer.id));
   };
 
-  const formatTimeRemaining = (expiresAt: string | Date) => {
+  const formatTimeRemaining = (expiresAt: string | Date | null) => {
+    if (!expiresAt) return "No expiry";
+    
     const now = new Date();
     const expiryDate = typeof expiresAt === 'string' ? new Date(expiresAt) : expiresAt;
+    
+    if (isNaN(expiryDate.getTime())) return "Invalid date";
+    
     const timeLeft = expiryDate.getTime() - now.getTime();
     const daysLeft = Math.ceil(timeLeft / (1000 * 60 * 60 * 24));
     
