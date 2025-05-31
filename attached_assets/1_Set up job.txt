@@ -1,34 +1,42 @@
-﻿2025-05-26T20:34:06.5609294Z Current runner version: '2.324.0'
-2025-05-26T20:34:06.5635252Z ##[group]Runner Image Provisioner
-2025-05-26T20:34:06.5636146Z Hosted Compute Agent
-2025-05-26T20:34:06.5636820Z Version: 20250508.323
-2025-05-26T20:34:06.5637511Z Commit: 81b259f29879f73b4213d199e42d8c3465dae986
-2025-05-26T20:34:06.5638186Z Build Date: 2025-05-08T19:40:08Z
-2025-05-26T20:34:06.5638827Z ##[endgroup]
-2025-05-26T20:34:06.5639569Z ##[group]Operating System
-2025-05-26T20:34:06.5640168Z Ubuntu
-2025-05-26T20:34:06.5640666Z 24.04.2
-2025-05-26T20:34:06.5641201Z LTS
-2025-05-26T20:34:06.5641681Z ##[endgroup]
-2025-05-26T20:34:06.5642191Z ##[group]Runner Image
-2025-05-26T20:34:06.5642783Z Image: ubuntu-24.04
-2025-05-26T20:34:06.5643474Z Version: 20250511.1.0
-2025-05-26T20:34:06.5644592Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250511.1/images/ubuntu/Ubuntu2404-Readme.md
-2025-05-26T20:34:06.5645970Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250511.1
-2025-05-26T20:34:06.5647200Z ##[endgroup]
-2025-05-26T20:34:06.5648194Z ##[group]GITHUB_TOKEN Permissions
-2025-05-26T20:34:06.5650286Z Contents: read
-2025-05-26T20:34:06.5650902Z Metadata: read
-2025-05-26T20:34:06.5651506Z ##[endgroup]
-2025-05-26T20:34:06.5653919Z Secret source: Actions
-2025-05-26T20:34:06.5654689Z Prepare workflow directory
-2025-05-26T20:34:06.5980567Z Prepare all required actions
-2025-05-26T20:34:06.6019686Z Getting action download info
-2025-05-26T20:34:06.9087465Z ##[group]Download immutable action package 'actions/download-artifact@v4'
-2025-05-26T20:34:06.9088591Z Version: 4.3.0
-2025-05-26T20:34:06.9089763Z Digest: sha256:552a5b9ad918f62ec0c2e8f42f3c694d4ebd1b4036b18c39b14168fcdfc0e4f2
-2025-05-26T20:34:06.9091134Z Source commit SHA: d3f86a106a0bac45b974a628896c90dbdf5c8093
-2025-05-26T20:34:06.9091890Z ##[endgroup]
-2025-05-26T20:34:07.1025586Z Download action repository 'azure/login@v2' (SHA:a457da9ea143d694b1b9c7c869ebb04ebe844ef5)
-2025-05-26T20:34:07.2528839Z Download action repository 'azure/webapps-deploy@v3' (SHA:2fdd5c3ebb4e540834e86ecc1f6fdcd5539023ee)
-2025-05-26T20:34:09.0022193Z Complete job name: deploy
+﻿2025-05-31T12:53:38.1487908Z Current runner version: '2.324.0'
+2025-05-31T12:53:38.1511309Z ##[group]Runner Image Provisioner
+2025-05-31T12:53:38.1512125Z Hosted Compute Agent
+2025-05-31T12:53:38.1512674Z Version: 20250508.323
+2025-05-31T12:53:38.1513379Z Commit: 81b259f29879f73b4213d199e42d8c3465dae986
+2025-05-31T12:53:38.1514026Z Build Date: 2025-05-08T19:40:08Z
+2025-05-31T12:53:38.1514609Z ##[endgroup]
+2025-05-31T12:53:38.1515211Z ##[group]Operating System
+2025-05-31T12:53:38.1515793Z Ubuntu
+2025-05-31T12:53:38.1516246Z 24.04.2
+2025-05-31T12:53:38.1516773Z LTS
+2025-05-31T12:53:38.1517205Z ##[endgroup]
+2025-05-31T12:53:38.1517703Z ##[group]Runner Image
+2025-05-31T12:53:38.1518336Z Image: ubuntu-24.04
+2025-05-31T12:53:38.1518811Z Version: 20250511.1.0
+2025-05-31T12:53:38.1520077Z Included Software: https://github.com/actions/runner-images/blob/ubuntu24/20250511.1/images/ubuntu/Ubuntu2404-Readme.md
+2025-05-31T12:53:38.1521458Z Image Release: https://github.com/actions/runner-images/releases/tag/ubuntu24%2F20250511.1
+2025-05-31T12:53:38.1522591Z ##[endgroup]
+2025-05-31T12:53:38.1523665Z ##[group]GITHUB_TOKEN Permissions
+2025-05-31T12:53:38.1525593Z Contents: read
+2025-05-31T12:53:38.1526226Z Metadata: read
+2025-05-31T12:53:38.1526713Z ##[endgroup]
+2025-05-31T12:53:38.1528835Z Secret source: Actions
+2025-05-31T12:53:38.1530228Z Prepare workflow directory
+2025-05-31T12:53:38.1850449Z Prepare all required actions
+2025-05-31T12:53:38.1889702Z Getting action download info
+2025-05-31T12:53:38.6124765Z ##[group]Download immutable action package 'actions/checkout@v4'
+2025-05-31T12:53:38.6125809Z Version: 4.2.2
+2025-05-31T12:53:38.6126806Z Digest: sha256:ccb2698953eaebd21c7bf6268a94f9c26518a7e38e27e0b83c1fe1ad049819b1
+2025-05-31T12:53:38.6127905Z Source commit SHA: 11bd71901bbe5b1630ceea73d27597364c9af683
+2025-05-31T12:53:38.6128717Z ##[endgroup]
+2025-05-31T12:53:38.6821463Z ##[group]Download immutable action package 'actions/setup-node@v3'
+2025-05-31T12:53:38.6822280Z Version: 3.9.1
+2025-05-31T12:53:38.6823055Z Digest: sha256:d8c8dbd6e63927801f9de42620f961a361b03be6034dcc11e83ca01f50cb9f40
+2025-05-31T12:53:38.6824082Z Source commit SHA: 3235b876344d2a9aa001b8d1453c930bba69e610
+2025-05-31T12:53:38.6824730Z ##[endgroup]
+2025-05-31T12:53:38.9934517Z ##[group]Download immutable action package 'actions/upload-artifact@v4'
+2025-05-31T12:53:38.9935461Z Version: 4.6.2
+2025-05-31T12:53:38.9936314Z Digest: sha256:290722aa3281d5caf23d0acdc3dbeb3424786a1a01a9cc97e72f147225e37c38
+2025-05-31T12:53:38.9937364Z Source commit SHA: ea165f8d65b6e75b540449e92b4886f43607fa02
+2025-05-31T12:53:38.9938115Z ##[endgroup]
+2025-05-31T12:53:39.1850821Z Complete job name: build

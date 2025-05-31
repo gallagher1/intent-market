@@ -1,67 +1,67 @@
-﻿2025-05-26T20:33:19.3697535Z ##[group]Run actions/checkout@v4
-2025-05-26T20:33:19.3698359Z with:
-2025-05-26T20:33:19.3698825Z   repository: gallagher1/intent-market
-2025-05-26T20:33:19.3699483Z   token: ***
-2025-05-26T20:33:19.3700024Z   ssh-strict: true
-2025-05-26T20:33:19.3700407Z   ssh-user: git
-2025-05-26T20:33:19.3700798Z   persist-credentials: true
-2025-05-26T20:33:19.3701234Z   clean: true
-2025-05-26T20:33:19.3701636Z   sparse-checkout-cone-mode: true
-2025-05-26T20:33:19.3702108Z   fetch-depth: 1
-2025-05-26T20:33:19.3702530Z   fetch-tags: false
-2025-05-26T20:33:19.3702972Z   show-progress: true
-2025-05-26T20:33:19.3703365Z   lfs: false
-2025-05-26T20:33:19.3703725Z   submodules: false
-2025-05-26T20:33:19.3704114Z   set-safe-directory: true
-2025-05-26T20:33:19.3704775Z ##[endgroup]
-2025-05-26T20:33:19.4795827Z Syncing repository: gallagher1/intent-market
-2025-05-26T20:33:19.4799008Z ##[group]Getting Git version info
-2025-05-26T20:33:19.4800432Z Working directory is '/home/runner/work/intent-market/intent-market'
-2025-05-26T20:33:19.4801586Z [command]/usr/bin/git version
-2025-05-26T20:33:19.4861828Z git version 2.49.0
-2025-05-26T20:33:19.4887593Z ##[endgroup]
-2025-05-26T20:33:19.4900685Z Temporarily overriding HOME='/home/runner/work/_temp/78f8928e-9d68-4704-b307-46ed3ed77bee' before making global git config changes
-2025-05-26T20:33:19.4902045Z Adding repository directory to the temporary git global config as a safe directory
-2025-05-26T20:33:19.4912782Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/intent-market/intent-market
-2025-05-26T20:33:19.4945054Z Deleting the contents of '/home/runner/work/intent-market/intent-market'
-2025-05-26T20:33:19.4948476Z ##[group]Initializing the repository
-2025-05-26T20:33:19.4952468Z [command]/usr/bin/git init /home/runner/work/intent-market/intent-market
-2025-05-26T20:33:19.5034212Z hint: Using 'master' as the name for the initial branch. This default branch name
-2025-05-26T20:33:19.5035228Z hint: is subject to change. To configure the initial branch name to use in all
-2025-05-26T20:33:19.5036146Z hint: of your new repositories, which will suppress this warning, call:
-2025-05-26T20:33:19.5036821Z hint:
-2025-05-26T20:33:19.5037311Z hint: 	git config --global init.defaultBranch <name>
-2025-05-26T20:33:19.5038002Z hint:
-2025-05-26T20:33:19.5038533Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
-2025-05-26T20:33:19.5039387Z hint: 'development'. The just-created branch can be renamed via this command:
-2025-05-26T20:33:19.5040337Z hint:
-2025-05-26T20:33:19.5040718Z hint: 	git branch -m <name>
-2025-05-26T20:33:19.5043520Z Initialized empty Git repository in /home/runner/work/intent-market/intent-market/.git/
-2025-05-26T20:33:19.5055303Z [command]/usr/bin/git remote add origin https://github.com/gallagher1/intent-market
-2025-05-26T20:33:19.5088170Z ##[endgroup]
-2025-05-26T20:33:19.5088908Z ##[group]Disabling automatic garbage collection
-2025-05-26T20:33:19.5091947Z [command]/usr/bin/git config --local gc.auto 0
-2025-05-26T20:33:19.5119322Z ##[endgroup]
-2025-05-26T20:33:19.5120266Z ##[group]Setting up auth
-2025-05-26T20:33:19.5125797Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
-2025-05-26T20:33:19.5154703Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
-2025-05-26T20:33:19.5447231Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
-2025-05-26T20:33:19.5476934Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
-2025-05-26T20:33:19.5695694Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
-2025-05-26T20:33:19.5728091Z ##[endgroup]
-2025-05-26T20:33:19.5729331Z ##[group]Fetching the repository
-2025-05-26T20:33:19.5738074Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +26e4d2e82338739a7bba6d8416dd01c00e75aaa7:refs/remotes/origin/main
-2025-05-26T20:33:20.2460391Z From https://github.com/gallagher1/intent-market
-2025-05-26T20:33:20.2462182Z  * [new ref]         26e4d2e82338739a7bba6d8416dd01c00e75aaa7 -> origin/main
-2025-05-26T20:33:20.2490240Z ##[endgroup]
-2025-05-26T20:33:20.2491643Z ##[group]Determining the checkout info
-2025-05-26T20:33:20.2493064Z ##[endgroup]
-2025-05-26T20:33:20.2497383Z [command]/usr/bin/git sparse-checkout disable
-2025-05-26T20:33:20.2545997Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
-2025-05-26T20:33:20.2583301Z ##[group]Checking out the ref
-2025-05-26T20:33:20.2586752Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
-2025-05-26T20:33:20.2732895Z Switched to a new branch 'main'
-2025-05-26T20:33:20.2735759Z branch 'main' set up to track 'origin/main'.
-2025-05-26T20:33:20.2743847Z ##[endgroup]
-2025-05-26T20:33:20.2776808Z [command]/usr/bin/git log -1 --format=%H
-2025-05-26T20:33:20.2798106Z 26e4d2e82338739a7bba6d8416dd01c00e75aaa7
+﻿2025-05-31T12:53:39.2529689Z ##[group]Run actions/checkout@v4
+2025-05-31T12:53:39.2530622Z with:
+2025-05-31T12:53:39.2531073Z   repository: gallagher1/intent-market
+2025-05-31T12:53:39.2531803Z   token: ***
+2025-05-31T12:53:39.2532217Z   ssh-strict: true
+2025-05-31T12:53:39.2532649Z   ssh-user: git
+2025-05-31T12:53:39.2533093Z   persist-credentials: true
+2025-05-31T12:53:39.2533581Z   clean: true
+2025-05-31T12:53:39.2534054Z   sparse-checkout-cone-mode: true
+2025-05-31T12:53:39.2534588Z   fetch-depth: 1
+2025-05-31T12:53:39.2535020Z   fetch-tags: false
+2025-05-31T12:53:39.2535449Z   show-progress: true
+2025-05-31T12:53:39.2535884Z   lfs: false
+2025-05-31T12:53:39.2536275Z   submodules: false
+2025-05-31T12:53:39.2536723Z   set-safe-directory: true
+2025-05-31T12:53:39.2537414Z ##[endgroup]
+2025-05-31T12:53:39.3582981Z Syncing repository: gallagher1/intent-market
+2025-05-31T12:53:39.3585274Z ##[group]Getting Git version info
+2025-05-31T12:53:39.3586120Z Working directory is '/home/runner/work/intent-market/intent-market'
+2025-05-31T12:53:39.3587349Z [command]/usr/bin/git version
+2025-05-31T12:53:39.3618839Z git version 2.49.0
+2025-05-31T12:53:39.3644938Z ##[endgroup]
+2025-05-31T12:53:39.3664242Z Temporarily overriding HOME='/home/runner/work/_temp/b7936966-61ae-4c35-a569-c340e3faeae8' before making global git config changes
+2025-05-31T12:53:39.3669234Z Adding repository directory to the temporary git global config as a safe directory
+2025-05-31T12:53:39.3671027Z [command]/usr/bin/git config --global --add safe.directory /home/runner/work/intent-market/intent-market
+2025-05-31T12:53:39.3701478Z Deleting the contents of '/home/runner/work/intent-market/intent-market'
+2025-05-31T12:53:39.3704894Z ##[group]Initializing the repository
+2025-05-31T12:53:39.3708680Z [command]/usr/bin/git init /home/runner/work/intent-market/intent-market
+2025-05-31T12:53:39.3770845Z hint: Using 'master' as the name for the initial branch. This default branch name
+2025-05-31T12:53:39.3772834Z hint: is subject to change. To configure the initial branch name to use in all
+2025-05-31T12:53:39.3776035Z hint: of your new repositories, which will suppress this warning, call:
+2025-05-31T12:53:39.3777389Z hint:
+2025-05-31T12:53:39.3778086Z hint: 	git config --global init.defaultBranch <name>
+2025-05-31T12:53:39.3778848Z hint:
+2025-05-31T12:53:39.3779699Z hint: Names commonly chosen instead of 'master' are 'main', 'trunk' and
+2025-05-31T12:53:39.3780661Z hint: 'development'. The just-created branch can be renamed via this command:
+2025-05-31T12:53:39.3781630Z hint:
+2025-05-31T12:53:39.3782366Z hint: 	git branch -m <name>
+2025-05-31T12:53:39.3783472Z Initialized empty Git repository in /home/runner/work/intent-market/intent-market/.git/
+2025-05-31T12:53:39.3789744Z [command]/usr/bin/git remote add origin https://github.com/gallagher1/intent-market
+2025-05-31T12:53:39.3822046Z ##[endgroup]
+2025-05-31T12:53:39.3823430Z ##[group]Disabling automatic garbage collection
+2025-05-31T12:53:39.3826576Z [command]/usr/bin/git config --local gc.auto 0
+2025-05-31T12:53:39.3855030Z ##[endgroup]
+2025-05-31T12:53:39.3856523Z ##[group]Setting up auth
+2025-05-31T12:53:39.3862684Z [command]/usr/bin/git config --local --name-only --get-regexp core\.sshCommand
+2025-05-31T12:53:39.3893416Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'core\.sshCommand' && git config --local --unset-all 'core.sshCommand' || :"
+2025-05-31T12:53:39.4181293Z [command]/usr/bin/git config --local --name-only --get-regexp http\.https\:\/\/github\.com\/\.extraheader
+2025-05-31T12:53:39.4210902Z [command]/usr/bin/git submodule foreach --recursive sh -c "git config --local --name-only --get-regexp 'http\.https\:\/\/github\.com\/\.extraheader' && git config --local --unset-all 'http.https://github.com/.extraheader' || :"
+2025-05-31T12:53:39.4423750Z [command]/usr/bin/git config --local http.https://github.com/.extraheader AUTHORIZATION: basic ***
+2025-05-31T12:53:39.4457472Z ##[endgroup]
+2025-05-31T12:53:39.4458906Z ##[group]Fetching the repository
+2025-05-31T12:53:39.4467637Z [command]/usr/bin/git -c protocol.version=2 fetch --no-tags --prune --no-recurse-submodules --depth=1 origin +55fe55458a163ce3bdbab60fa8964d5cd1d93e8c:refs/remotes/origin/main
+2025-05-31T12:53:40.1772009Z From https://github.com/gallagher1/intent-market
+2025-05-31T12:53:40.1773411Z  * [new ref]         55fe55458a163ce3bdbab60fa8964d5cd1d93e8c -> origin/main
+2025-05-31T12:53:40.1797619Z ##[endgroup]
+2025-05-31T12:53:40.1799576Z ##[group]Determining the checkout info
+2025-05-31T12:53:40.1801455Z ##[endgroup]
+2025-05-31T12:53:40.1803827Z [command]/usr/bin/git sparse-checkout disable
+2025-05-31T12:53:40.1840207Z [command]/usr/bin/git config --local --unset-all extensions.worktreeConfig
+2025-05-31T12:53:40.1867075Z ##[group]Checking out the ref
+2025-05-31T12:53:40.1870454Z [command]/usr/bin/git checkout --progress --force -B main refs/remotes/origin/main
+2025-05-31T12:53:40.2244065Z Switched to a new branch 'main'
+2025-05-31T12:53:40.2247962Z branch 'main' set up to track 'origin/main'.
+2025-05-31T12:53:40.2257015Z ##[endgroup]
+2025-05-31T12:53:40.2294349Z [command]/usr/bin/git log -1 --format=%H
+2025-05-31T12:53:40.2316923Z 55fe55458a163ce3bdbab60fa8964d5cd1d93e8c
