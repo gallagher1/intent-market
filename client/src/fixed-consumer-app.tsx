@@ -182,8 +182,14 @@ export default function FixedConsumerApp() {
       return { userData: await res.json(), expectedUserType: userType };
     },
     onSuccess: ({ userData, expectedUserType }) => {
+      // Debug logging for Azure investigation
+      console.log("Login success - userData:", userData);
+      console.log("Login success - expectedUserType:", expectedUserType);
+      console.log("User type match check:", userData.userType, "===", expectedUserType, "->", userData.userType === expectedUserType);
+      
       // Check if the user type matches what was expected
       if (userData.userType !== expectedUserType) {
+        console.log("USER TYPE MISMATCH DETECTED - showing validation error");
         const userTypeLabel = userData.userType === 'consumer' ? 'Consumer' : 'Company';
         const expectedLabel = expectedUserType === 'consumer' ? 'Consumer' : 'Company';
         toast({ 
@@ -198,6 +204,7 @@ export default function FixedConsumerApp() {
         return;
       }
       
+      console.log("User type validation passed - proceeding with login");
       queryClient.invalidateQueries({ queryKey: ["/api/user"] });
       toast({ title: "Login successful", description: `Welcome back, ${userData.name || userData.username}!` });
     },
