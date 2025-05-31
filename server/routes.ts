@@ -305,7 +305,7 @@ export async function registerRoutes(app: Express): Promise<Server> {
           completedPurchases: purchases.length,
           potentialSavings
         });
-      } else if (userType === "producer") {
+      } else if (userType === "company") {
         const offers = await storage.getOffers({ producerId: userId });
         const pendingOffers = offers.filter(o => o.status === "pending").length;
         const acceptedOffers = offers.filter(o => o.status === "accepted").length;
