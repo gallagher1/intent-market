@@ -111,7 +111,7 @@ export default function FixedConsumerApp() {
       const res = await apiRequest("GET", "/api/user/offers");
       return await res.json();
     },
-    enabled: !!user && user.userType === 'producer'
+    enabled: !!user && user.userType === 'company'
   });
 
   // Fetch user's purchases
@@ -134,14 +134,14 @@ export default function FixedConsumerApp() {
     enabled: !!user
   });
 
-  // Fetch all intents for producers (market research)
+  // Fetch all intents for companies (market research)
   const { data: allIntents = [] } = useQuery({
     queryKey: ["/api/intents"],
     queryFn: async () => {
       const res = await apiRequest("GET", "/api/intents");
       return await res.json();
     },
-    enabled: !!user && user.userType === 'producer'
+    enabled: !!user && user.userType === 'company'
   });
 
   // Update logged in state when user data changes
