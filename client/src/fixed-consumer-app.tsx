@@ -1060,25 +1060,7 @@ export default function FixedConsumerApp() {
               </Button>
             </div>
             
-            <div className="text-center text-sm text-gray-500">
-              <p>Quick Test Accounts:</p>
-              <div className="flex gap-2 justify-center mt-2">
-                <Button 
-                  variant="ghost" 
-                  size="sm"
-                  onClick={() => setLoginUsername("John Consumer")}
-                >
-                  John Consumer
-                </Button>
-                <Button 
-                  variant="ghost" 
-                  size="sm"
-                  onClick={() => setLoginUsername("TechCorp Company")}
-                >
-                  TechCorp Company
-                </Button>
-              </div>
-            </div>
+
           </div>
         </CardContent>
       </Card>
