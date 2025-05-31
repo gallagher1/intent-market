@@ -179,9 +179,25 @@ export default function FixedConsumerApp() {
   const loginMutation = useMutation({
     mutationFn: async ({ username, userType }: { username: string, userType: 'consumer' | 'company' }) => {
       const res = await apiRequest("POST", "/api/login", { username, password: "demo" });
-      return await res.json();
+      return { userData: await res.json(), expectedUserType: userType };
     },
-    onSuccess: (userData) => {
+    onSuccess: ({ userData, expectedUserType }) => {
+      // Check if the user type matches what was expected
+      if (userData.userType !== expectedUserType) {
+        const userTypeLabel = userData.userType === 'consumer' ? 'Consumer' : 'Company';
+        const expectedLabel = expectedUserType === 'consumer' ? 'Consumer' : 'Company';
+        toast({ 
+          title: "Wrong Account Type", 
+          description: `This is a ${userTypeLabel} account. Please use the "Login as ${userTypeLabel}" button instead.`,
+          variant: "destructive" 
+        });
+        // Logout the user since they logged in with wrong type
+        setTimeout(() => {
+          apiRequest("POST", "/api/logout");
+        }, 100);
+        return;
+      }
+      
       queryClient.invalidateQueries({ queryKey: ["/api/user"] });
       toast({ title: "Login successful", description: `Welcome back, ${userData.name || userData.username}!` });
     },
