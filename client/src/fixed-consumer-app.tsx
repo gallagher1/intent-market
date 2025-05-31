@@ -157,7 +157,7 @@ export default function FixedConsumerApp() {
 
   // Register mutation (for demo)
   const registerMutation = useMutation({
-    mutationFn: async ({ username, userType }: { username: string, userType: 'consumer' | 'producer' }) => {
+    mutationFn: async ({ username, userType }: { username: string, userType: 'consumer' | 'company' }) => {
       const res = await apiRequest("POST", "/api/register", { 
         username, 
         password: "demo", 
@@ -177,7 +177,7 @@ export default function FixedConsumerApp() {
 
   // Login mutation
   const loginMutation = useMutation({
-    mutationFn: async ({ username, userType }: { username: string, userType: 'consumer' | 'producer' }) => {
+    mutationFn: async ({ username, userType }: { username: string, userType: 'consumer' | 'company' }) => {
       const res = await apiRequest("POST", "/api/login", { username, password: "demo" });
       return await res.json();
     },
@@ -284,7 +284,7 @@ export default function FixedConsumerApp() {
   });
 
   // Handler functions
-  const handleLogin = (username: string, userType: 'consumer' | 'producer') => {
+  const handleLogin = (username: string, userType: 'consumer' | 'company') => {
     loginMutation.mutate({ username, userType });
   };
 
@@ -358,7 +358,7 @@ export default function FixedConsumerApp() {
         
         {/* Main Navigation */}
         <MainNavigation
-          userType={currentUser.userType === 'producer' ? 'company' : currentUser.userType}
+          userType={currentUser.userType}
           currentView={currentView}
           onViewChange={handleNavigation}
           onLogout={handleLogout}
@@ -1032,7 +1032,7 @@ export default function FixedConsumerApp() {
                 {loginMutation.isPending || registerMutation.isPending ? "Logging in..." : "Login as Consumer"}
               </Button>
               <Button 
-                onClick={() => handleLogin(loginUsername || "Producer User", "producer")}
+                onClick={() => handleLogin(loginUsername || "Company User", "company")}
                 variant="outline"
                 className="w-full"
                 disabled={loginMutation.isPending || registerMutation.isPending}
@@ -1054,7 +1054,7 @@ export default function FixedConsumerApp() {
                 <Button 
                   variant="ghost" 
                   size="sm"
-                  onClick={() => setLoginUsername("TechCorp Producer")}
+                  onClick={() => setLoginUsername("TechCorp Company")}
                 >
                   TechCorp Company
                 </Button>
