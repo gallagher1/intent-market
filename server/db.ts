@@ -21,5 +21,7 @@ const connectionConfig = {
   acquireTimeoutMillis: 20000, // Time to wait for a connection from the pool
 };
 
+console.log("✅ Loaded pg-based DB config (not Neon)");
+
 export const pool = new Pool(connectionConfig);
 export const db = drizzle(pool, { schema });
