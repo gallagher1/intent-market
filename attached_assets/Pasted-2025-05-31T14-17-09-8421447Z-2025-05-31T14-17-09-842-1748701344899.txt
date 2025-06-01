@@ -1,0 +1,108 @@
+2025-05-31T14:17:09.8421447Z ..............................................
+2025-05-31T14:17:09.8423869Z
+2025-05-31T14:17:09.8636894Z Number of files: 34 (reg: 22, dir: 12)
+2025-05-31T14:17:09.8733434Z Number of created files: 1 (reg: 1)
+2025-05-31T14:17:09.8931244Z Number of deleted files: 0
+2025-05-31T14:17:09.9142501Z Number of regular files transferred: 22
+2025-05-31T14:17:09.9507155Z Total file size: 127.41M bytes
+2025-05-31T14:17:09.9747261Z Total transferred file size: 127.41M bytes
+2025-05-31T14:17:09.9970945Z Literal data: 127.41M bytes
+2025-05-31T14:17:10.0128096Z Matched data: 0 bytes
+2025-05-31T14:17:10.0329145Z File list size: 0
+2025-05-31T14:17:10.0526527Z File list generation time: 0.020 seconds
+2025-05-31T14:17:10.0724727Z File list transfer time: 0.000 seconds
+2025-05-31T14:17:10.0931013Z Total bytes sent: 127.03M
+2025-05-31T14:17:10.1306723Z Total bytes received: 461
+2025-05-31T14:17:10.1507905Z
+2025-05-31T14:17:10.1718844Z sent 127.03M bytes  received 461 bytes  2.17M bytes/sec
+2025-05-31T14:17:10.20059Z total size is 127.41M  speedup is 1.00
+2025-05-31T14:17:10.2305439Z Attempt 1: Rsync for filelist /tmp//splits/split.ad completed with exit code 0
+2025-05-31T14:17:13.3664083Z
+2025-05-31T14:17:13.4180381Z Number of files: 21 (reg: 16, dir: 5)
+2025-05-31T14:17:13.4666532Z Number of created files: 0
+2025-05-31T14:17:13.5180373Z Number of deleted files: 0
+2025-05-31T14:17:13.5466854Z Number of regular files transferred: 16
+2025-05-31T14:17:13.5877578Z Total file size: 144.54M bytes
+2025-05-31T14:17:13.6580338Z Total transferred file size: 144.54M bytes
+2025-05-31T14:17:13.7099387Z Literal data: 144.54M bytes
+2025-05-31T14:17:13.7395539Z Matched data: 0 bytes
+2025-05-31T14:17:13.7981733Z File list size: 0
+2025-05-31T14:17:13.8200103Z File list generation time: 0.068 seconds
+2025-05-31T14:17:13.8496989Z File list transfer time: 0.000 seconds
+2025-05-31T14:17:13.9184845Z Total bytes sent: 138.34M
+2025-05-31T14:17:13.9590015Z Total bytes received: 335
+2025-05-31T14:17:14.0216181Z
+2025-05-31T14:17:14.0521607Z sent 138.34M bytes  received 335 bytes  2.21M bytes/sec
+2025-05-31T14:17:14.0795008Z total size is 144.54M  speedup is 1.04
+2025-05-31T14:17:14.1196616Z Attempt 1: Rsync for filelist /tmp//splits/split.ah completed with exit code 0
+2025-05-31T14:17:14.1295642Z Completed successfully in 63 seconds
+2025-05-31T14:17:36.2687728Z    _____
+2025-05-31T14:17:36.3003858Z   /  _  \ __________ _________   ____
+2025-05-31T14:17:36.3004283Z  /  /_\  \\___   /  |  \_  __ \_/ __ \
+2025-05-31T14:17:36.3004311Z /    |    \/    /|  |  /|  | \/\  ___/
+2025-05-31T14:17:36.3004405Z \____|__  /_____ \____/ |__|    \___  >
+2025-05-31T14:17:36.3004427Z         \/      \/                  \/
+2025-05-31T14:17:36.3004466Z A P P   S E R V I C E   O N   L I N U X
+2025-05-31T14:17:36.3004494Z
+2025-05-31T14:17:36.300452Z Documentation: http://aka.ms/webapp-linux
+2025-05-31T14:17:36.3004541Z NodeJS quickstart: https://aka.ms/node-qs
+2025-05-31T14:17:36.3004578Z NodeJS Version : v22.15.0
+2025-05-31T14:17:36.30046Z Note: Any data outside '/home' is not persisted
+2025-05-31T14:17:36.3004619Z
+2025-05-31T14:17:38.4710911Z Starting OpenBSD Secure Shell server: sshd.
+2025-05-31T14:17:38.5038044Z WEBSITES_INCLUDE_CLOUD_CERTS is not set to true.
+2025-05-31T14:17:38.5616255Z Updating certificates in /etc/ssl/certs...
+2025-05-31T14:17:52.8456208Z rehash: warning: skipping ca-certificates.crt,it does not contain exactly one certificate or CRL
+2025-05-31T14:17:52.9556084Z 2 added, 0 removed; done.
+2025-05-31T14:17:52.9572874Z Running hooks in /etc/ca-certificates/update.d...
+2025-05-31T14:17:52.9667926Z done.
+2025-05-31T14:17:53.026266Z CA certificates copied and updated successfully.
+2025-05-31T14:17:53.9206349Z Starting periodic command scheduler: cron.
+2025-05-31T14:17:53.9206689Z Found build manifest file at '/home/site/wwwroot/oryx-manifest.toml'. Deserializing it...
+2025-05-31T14:17:53.9206716Z Could not find operation ID in manifest. Generating an operation id...
+2025-05-31T14:17:53.920676Z Build Operation ID: 181b8292-8325-4eb4-a972-b8d06588ac98
+2025-05-31T14:17:54.5341992Z Environment Variables for Application Insight's IPA Codeless Configuration exists..
+2025-05-31T14:17:54.6749481Z Writing output script to '/opt/startup/startup.sh'
+2025-05-31T14:17:54.9376391Z Running #!/bin/sh
+2025-05-31T14:17:54.9376863Z
+2025-05-31T14:17:54.9376903Z # Enter the source directory to make sure the script runs where the user expects
+2025-05-31T14:17:54.9377037Z cd "/home/site/wwwroot"
+2025-05-31T14:17:54.9377056Z
+2025-05-31T14:17:54.9377077Z export NODE_PATH=/usr/local/lib/node_modules:$NODE_PATH
+2025-05-31T14:17:54.93771Z if [ -z "$PORT" ]; then
+2025-05-31T14:17:54.9377119Z 		export PORT=8080
+2025-05-31T14:17:54.9377141Z fi
+2025-05-31T14:17:54.937716Z
+2025-05-31T14:17:54.9377202Z echo Found tar.gz based node_modules.
+2025-05-31T14:17:54.937726Z extractionCommand="tar -xzf node_modules.tar.gz -C /node_modules"
+2025-05-31T14:17:54.9377282Z echo "Removing existing modules directory from root..."
+2025-05-31T14:17:54.9377301Z rm -fr /node_modules
+2025-05-31T14:17:54.9377321Z mkdir -p /node_modules
+2025-05-31T14:17:54.937734Z echo Extracting modules...
+2025-05-31T14:17:54.9377378Z $extractionCommand
+2025-05-31T14:17:54.93774Z export NODE_PATH="/node_modules":$NODE_PATH
+2025-05-31T14:17:54.937742Z export PATH=/node_modules/.bin:$PATH
+2025-05-31T14:17:54.9377439Z if [ -d node_modules ]; then
+2025-05-31T14:17:54.937746Z     mv -f node_modules _del_node_modules || true
+2025-05-31T14:17:54.9377477Z fi
+2025-05-31T14:17:54.9377495Z
+2025-05-31T14:17:54.9377531Z if [ -d /node_modules ]; then
+2025-05-31T14:17:54.9377552Z     ln -sfn /node_modules ./node_modules
+2025-05-31T14:17:54.9377569Z fi
+2025-05-31T14:17:55.0264692Z
+2025-05-31T14:17:55.02651Z echo "Done."
+2025-05-31T14:17:55.0265655Z PATH="$PATH:/home/site/wwwroot" npm start
+2025-05-31T14:17:55.0265766Z Found tar.gz based node_modules.
+2025-05-31T14:17:55.0265789Z Removing existing modules directory from root...
+2025-05-31T14:17:55.0580583Z Extracting modules...
+2025-05-31T14:18:33.3698552Z 2:18:33 PM [express] GET /api/user 401 in 32ms :: {"message":"Not authenticated"}
+2025-05-31T14:18:33.7161235Z Done.
+2025-05-31T14:18:38.885259Z npm info using npm@10.9.2
+2025-05-31T14:18:38.9035559Z npm info using node@v22.15.0
+2025-05-31T14:18:40.6681541Z
+2025-05-31T14:18:40.6682299Z > rest-express@1.0.0 start
+2025-05-31T14:18:40.6682339Z > NODE_ENV=production node dist/index.js
+2025-05-31T14:18:40.6682381Z
+2025-05-31T14:18:43.0222741Z 2:18:43 PM [express] GET /api/user 401 in 38ms :: {"message":"Not authenticated"}
+2025-05-31T14:18:49.8335225Z 2:18:49 PM [express] serving on port 8080
+2025-05-31T14:19:12.6688555Z Terminated
